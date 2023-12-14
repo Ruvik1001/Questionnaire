@@ -16,6 +16,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+/**
+ * Fragment for see test results.
+ */
 class SeeResultsFragment : Fragment() {
     private val viewModel by viewModel<SeeResultsViewModel>()
     private lateinit var view: View

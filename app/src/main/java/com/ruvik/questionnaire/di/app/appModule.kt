@@ -10,30 +10,64 @@ import com.ruvik.questionnaire.glue.testmanagement.AdapterCreateTestRouter
 import com.ruvik.questionnaire.glue.testmanagement.AdapterFindTestRouter
 import com.ruvik.questionnaire.glue.testmanagement.AdapterMyTestsRouter
 import com.ruvik.questionnaire.glue.testmanagement.AdapterRunTestRouter
-import com.ruvik.questionnaire.presentation.HostActivity
 import com.ruvik.run_test.RunTestRouter
 import com.ruvik.sign_in.SignInRouter
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
+/**
+ * Koin module for app-level dependencies.
+ */
 val appModule = module {
-    single<SignInRouter> {
-        AdapterSignInRouter(null)
-    }
+    /**
+     * Provides an implementation of [SignInRouter] using [AdapterSignInRouter].
+     *
+     * @param navController The [NavController] used for navigation.
+     * @return An instance of [AdapterSignInRouter].
+     */
+    single<SignInRouter> { AdapterSignInRouter(navController = null) }
 
+    /**
+     * Provides an implementation of [MyTestsRouter] using [AdapterMyTestsRouter].
+     *
+     * @param context The application [Context].
+     * @param navController The [NavController] used for navigation.
+     * @return An instance of [AdapterMyTestsRouter].
+     */
     single<MyTestsRouter> {
-        AdapterMyTestsRouter(context = androidContext(), null)
+        AdapterMyTestsRouter(
+            context = androidContext(),
+            navController = null
+        )
     }
 
-    single<CreateTestRouter> {
-        AdapterCreateTestRouter(null)
-    }
+    /**
+     * Provides an implementation of [CreateTestRouter] using [AdapterCreateTestRouter].
+     *
+     * @param navController The [NavController] used for navigation.
+     * @return An instance of [AdapterCreateTestRouter].
+     */
+    single<CreateTestRouter> { AdapterCreateTestRouter(navController = null) }
 
+    /**
+     * Provides an implementation of [FindTestRouter] using [AdapterFindTestRouter].
+     *
+     * @param context The application [Context].
+     * @param navController The [NavController] used for navigation.
+     * @return An instance of [AdapterFindTestRouter].
+     */
     single<FindTestRouter> {
-        AdapterFindTestRouter(context = androidContext(), null)
+        AdapterFindTestRouter(
+            context = androidContext(),
+            navController = null
+        )
     }
 
-    single<RunTestRouter> {
-        AdapterRunTestRouter(null)
-    }
+    /**
+     * Provides an implementation of [RunTestRouter] using [AdapterRunTestRouter].
+     *
+     * @param navController The [NavController] used for navigation.
+     * @return An instance of [AdapterRunTestRouter].
+     */
+    single<RunTestRouter> { AdapterRunTestRouter(navController = null) }
 }

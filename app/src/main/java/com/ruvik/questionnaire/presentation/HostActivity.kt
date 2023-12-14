@@ -19,14 +19,21 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 
+/**
+ * HostActivity serves as the main activity of the application responsible for navigation setup.
+ */
 class HostActivity : AppCompatActivity() {
 
+    // Injected dependencies for navigation routers
     private val adapterSignInRouter: SignInRouter by inject()
     private val adapterMyTestsRouter: MyTestsRouter by inject()
     private val adapterCreateTestRouter: CreateTestRouter by inject()
     private val adapterFindTestRouter: FindTestRouter by inject()
     private val adapterRunTestRouter: RunTestRouter by inject()
 
+    /**
+     * Called when the activity is first created. Sets up the content view and initializes the navigation.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_host)
@@ -35,8 +42,14 @@ class HostActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Initialize the navigation setup.
+     */
     private suspend fun init() {
+        // Find the NavController associated with the NavHostFragment
         val navController = findNavController(R.id.fragmentContainerView)
+
+        // Switch NavController instances for each router
         (adapterSignInRouter as AdapterSignInRouter).switchNavController(navController)
         (adapterMyTestsRouter as AdapterMyTestsRouter).switchNavController(navController)
         (adapterCreateTestRouter as AdapterCreateTestRouter).switchNavController(navController)
@@ -44,10 +57,13 @@ class HostActivity : AppCompatActivity() {
         (adapterRunTestRouter as AdapterRunTestRouter).switchNavController(navController)
     }
 
+    /**
+     * Handle the back button press. Pop the back stack if available; otherwise, perform the default behavior.
+     */
     override fun onBackPressed() {
         if (!findNavController(R.id.fragmentContainerView).popBackStack()) {
             super.onBackPressed()
         }
     }
-
 }
+

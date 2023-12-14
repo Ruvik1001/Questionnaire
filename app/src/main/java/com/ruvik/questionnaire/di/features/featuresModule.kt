@@ -12,7 +12,15 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
+/**
+ * Koin module for providing ViewModel instances for various features.
+ */
 val featuresModule = module {
+    /**
+     * Provides a [SignInViewModel] using [SignInViewModel] implementation with dependencies.
+     *
+     * @return An instance of [SignInViewModel].
+     */
     viewModel<SignInViewModel> {
         SignInViewModel(
             signInUseCase = get(),
@@ -20,7 +28,11 @@ val featuresModule = module {
         )
     }
 
-
+    /**
+     * Provides a [SignUpViewModel] using [SignUpViewModel] implementation with dependencies.
+     *
+     * @return An instance of [SignUpViewModel].
+     */
     viewModel<SignUpViewModel> {
         SignUpViewModel(
             context = androidContext(),
@@ -28,7 +40,11 @@ val featuresModule = module {
         )
     }
 
-
+    /**
+     * Provides a [ForgotPasswordViewModel] using [ForgotPasswordViewModel] implementation with dependencies.
+     *
+     * @return An instance of [ForgotPasswordViewModel].
+     */
     viewModel<ForgotPasswordViewModel> {
         ForgotPasswordViewModel(
             context = androidContext(),
@@ -36,7 +52,11 @@ val featuresModule = module {
         )
     }
 
-
+    /**
+     * Provides a [MyTestsViewModel] using [MyTestsViewModel] implementation with dependencies.
+     *
+     * @return An instance of [MyTestsViewModel].
+     */
     viewModel<MyTestsViewModel> {
         MyTestsViewModel(
             loadUserTestsUseCase = get(),
@@ -44,7 +64,11 @@ val featuresModule = module {
         )
     }
 
-
+    /**
+     * Provides a [CreateTestViewModel] using [CreateTestViewModel] implementation with dependencies.
+     *
+     * @return An instance of [CreateTestViewModel].
+     */
     viewModel<CreateTestViewModel> {
         CreateTestViewModel(
             addNewTestUseCase = get(),
@@ -52,6 +76,11 @@ val featuresModule = module {
         )
     }
 
+    /**
+     * Provides a [FindTestViewModel] using [FindTestViewModel] implementation with dependencies.
+     *
+     * @return An instance of [FindTestViewModel].
+     */
     viewModel<FindTestViewModel> {
         FindTestViewModel(
             findTestByHashCodeUseCase = get(),
@@ -59,6 +88,11 @@ val featuresModule = module {
         )
     }
 
+    /**
+     * Provides a [RunTestViewModel] using [RunTestViewModel] implementation with dependencies.
+     *
+     * @return An instance of [RunTestViewModel].
+     */
     viewModel<RunTestViewModel> {
         RunTestViewModel(
             addAnswerUseCase = get(),
@@ -66,6 +100,11 @@ val featuresModule = module {
         )
     }
 
+    /**
+     * Provides a [SeeResultsViewModel] using [SeeResultsViewModel] implementation with dependencies.
+     *
+     * @return An instance of [SeeResultsViewModel].
+     */
     viewModel<SeeResultsViewModel> {
         SeeResultsViewModel(
             loadTestResultsUseCase = get()

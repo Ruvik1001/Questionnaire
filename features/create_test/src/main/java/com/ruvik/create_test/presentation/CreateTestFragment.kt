@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
-import android.widget.ScrollView
 import android.widget.TextView
 import com.ruvik.common.LongToast
 import com.ruvik.create_test.R
@@ -21,6 +20,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.inject
 
+/**
+ * Fragment for creating a new test.
+ */
 class CreateTestFragment : Fragment() {
 
     private val viewModel by inject<CreateTestViewModel>()
@@ -63,7 +65,6 @@ class CreateTestFragment : Fragment() {
             textViewTitle.text = viewModel.getTestName()
         }
 
-
         btnAddQuestion.setOnClickListener {
             containerLayout.addView(createItem(), index++)
         }
@@ -74,10 +75,10 @@ class CreateTestFragment : Fragment() {
                 delay(100)
                 if (!viewModel.addNewTest()) {
                     withContext(Dispatchers.Main) {
-                        LongToast.makeToast(this@CreateTestFragment.requireContext().applicationContext,
-                            getString(
-                                R.string.can_not_save
-                            ))
+                        LongToast.makeToast(
+                            this@CreateTestFragment.requireContext().applicationContext,
+                            getString(R.string.can_not_save)
+                        )
                         viewModel.needSave.postValue(false)
                         viewModel.clearItem()
                     }
@@ -92,6 +93,9 @@ class CreateTestFragment : Fragment() {
         return view
     }
 
+    /**
+     * Creates a new item view for the test.
+     */
     private fun createItem(): View {
         val itemLayout = layoutInflater.inflate(R.layout.test_item, containerLayout, false)
 
@@ -119,12 +123,14 @@ class CreateTestFragment : Fragment() {
             val answersString = mutableListOf<String>()
             for (elem in answers)
                 answersString.add(elem.text.toString())
-            viewModel.addItem(TestItem(
-                title.text.toString(),
-                0,
-                answersString,
-                mutableListOf()
-            ))
+            viewModel.addItem(
+                TestItem(
+                    title.text.toString(),
+                    0,
+                    answersString,
+                    mutableListOf()
+                )
+            )
         }
 
         return itemLayout

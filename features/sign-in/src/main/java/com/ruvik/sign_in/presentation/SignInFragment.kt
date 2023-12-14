@@ -22,6 +22,9 @@ import kotlinx.coroutines.withContext
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.Locale
 
+/**
+ * Fragment for sign-in.
+ */
 class SignInFragment : Fragment() {
 
     private val viewModel by viewModel<SignInViewModel>()

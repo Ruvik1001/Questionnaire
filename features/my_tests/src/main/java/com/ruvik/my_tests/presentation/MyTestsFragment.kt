@@ -21,6 +21,9 @@ import com.ruvik.domain.testmanagement.data.testinfo.TestBody
 import com.ruvik.my_tests.R
 import org.koin.android.ext.android.inject
 
+/**
+ * Fragment for see your tests.
+ */
 class MyTestsFragment : Fragment() {
     private val viewModel by inject<MyTestsViewModel>()
     private lateinit var view: View

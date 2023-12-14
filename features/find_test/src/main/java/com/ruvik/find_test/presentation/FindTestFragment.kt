@@ -17,6 +17,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+/**
+ * Fragment for finding tests.
+ */
 class FindTestFragment : Fragment() {
 
     private val viewModel by viewModel<FindTestViewModel>()
