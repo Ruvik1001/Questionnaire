@@ -1,0 +1,9 @@
+<resources>
+    <string name="email_pattern">[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]{2,}</string>
+    <string name="title_reset_password">Сброс пароля</string>
+    <string name="reset_email_hint">Почта</string>
+    <string name="reset_password_info">Внимание! После нажатия на кнопку, на указанную почту будет прислана ссылка для изменения пароля пользователя.</string>
+    <string name="reset_password_btn_text">Сбросить</string>
+    <string name="succesful_reset_password">Пароль успешно сброшен!</string>
+    <string name="failure_reset_password">Пароль сбросить не удалось. Пожалуйста, проверьте правильность указанной почты или перейдите во вкладку \"Зарегистрироваться\", чтобы создать новый аккаунт.</string>
+</resources>

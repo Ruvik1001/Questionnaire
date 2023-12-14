@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_hello">Добро пожаловать в опросник!</string>
+    <string name="login_editable_hint">Почта</string>
+    <string name="password_editable_hint">Пароль</string>
+    <string name="btn_sign_in_text">Войти</string>
+    <string name="btn_sign_up_text">Зарегистрироваться</string>
+    <string name="forgot_password_text">Забыл пароль</string>
+    <string name="lenguage_text">RU</string>
+    <string name="wrong_login_or_password">Неверный логин или пароль</string>
+</resources>

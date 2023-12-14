@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_about_test_title">Информация о тесте</string>
+    <string name="alert_about_test_body">Название теста: %1$s\n\nКак проходить: отвечайте на все вопросы теста, после чего появится возможность отправить ваши ответы.\n\nВНИМАНИЕ: при выходе из тестирования, все ответы будут сброшеныы, а результат не сохранен!</string>
+    <string name="button_send_text">Отправить</string>
+    <string name="test_send_alert_title">Отправка теста</string>
+    <string name="test_send_alert_text_successful">Тест отправлен успешно!\nПосле нажатия на кнопку, вы будете переброшены обратно к поиску тестов.</string>
+    <string name="finish_text">Закончить обзор теста</string>
+    <string name="test_send_alert_text_failure">Тест небыл отправлен!\nПожалуйста, попробуйте снова.</string>
+    <string name="repeat_text">Повторная отправка формы</string>
+</resources>

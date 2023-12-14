@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_sign_up">Давайте зарегистрируем новый аккаунт!</string>
+    <string name="email_hint">Почта</string>
+    <string name="password_hint">Пароль</string>
+    <string name="password_confirm_hint">Подтвердите пароль</string>
+    <string name="sign_up_btn_text">Зарегистрироваться</string>
+    <string name="email_pattern">[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]{2,}</string>
+    <string name="alert_sign_up_title">Регистрация</string>
+    <string name="successful_sign_up">Регистрация аккаунта прошла успешно!</string>
+    <string name="failure_sigen_up">Данный аккаунт уже зарегистрирован. Пожалуйста, попробуйте другую почту или нажмите \"Забыл пароль\" на главной странице.</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_my_tests">My tests</string>
+    <string name="no_tests">There are no tests yet. Create your test now!</string>
+    <string name="data_copy_successful">The data has been successfully copied!</string>
+</resources>

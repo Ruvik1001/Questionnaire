@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_hello">Welcome to the questionnaire!</string>
+    <string name="login_editable_hint">Email</string>
+    <string name="password_editable_hint">Password</string>
+    <string name="btn_sign_in_text">Sign in</string>
+    <string name="btn_sign_up_text">Sign up</string>
+    <string name="forgot_password_text">Forgot password</string>
+    <string name="lenguage_text">EN</string>
+    <string name="wrong_login_or_password">Wrong login or password</string>
+</resources>

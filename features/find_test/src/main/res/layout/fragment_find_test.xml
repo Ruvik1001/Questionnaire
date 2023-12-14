@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.FindTestFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+
+        <TextView
+            android:id="@+id/textViewFindTestTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_find_test"
+            android:textSize="@dimen/core_very_big_text"
+            style="@style/MiddleTextBlack"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:background="@color/blue"/>
+
+
+        <EditText
+            android:id="@+id/editTextTestCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:layout_above="@id/buttonFindTest"
+            android:layout_margin="@dimen/core_standard_margin"
+            android:hint="@string/test_code_hint"
+            android:inputType="textEmailAddress" />
+
+
+        <Button
+            android:id="@+id/buttonFindTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:layout_margin="@dimen/core_standard_margin"
+            android:text="@string/find_test_btn_text" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonFindTest"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/navigationPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue">
+
+            <ImageView
+                android:id="@+id/imageViewNotebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/note_white"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/imageViewSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_white"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

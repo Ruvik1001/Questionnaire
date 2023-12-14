@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="was_pushed_pattern">(Нажали: %1$s раз) %2$s</string>
+    <string name="nobody_run_test">Пока никто не прошёл тест.</string>
+</resources>

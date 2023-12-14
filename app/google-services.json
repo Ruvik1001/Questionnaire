@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "945697829536",
+    "firebase_url": "https://questionnaire-f5ea0-default-rtdb.firebaseio.com",
+    "project_id": "questionnaire-f5ea0",
+    "storage_bucket": "questionnaire-f5ea0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945697829536:android:e1e071136dfe2039b58fc5",
+        "android_client_info": {
+          "package_name": "com.ruvik.questionnaire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr0PxJDMuVkbngRhJLwgm1L0s13NCKDU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

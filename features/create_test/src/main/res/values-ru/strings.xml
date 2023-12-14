@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_question">Добавить вопрос</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="test_name_hint">Название теста</string>
+    <string name="insert_name">Введите название</string>
+    <string name="enter_option">Введите варинат</string>
+    <string name="add_option">Добавить поле</string>
+    <string name="can_not_save">Не могу сохранить тест. Попробуйте ещё раз</string>
+</resources>

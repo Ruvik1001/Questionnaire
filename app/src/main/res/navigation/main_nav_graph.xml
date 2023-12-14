@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.ruvik.sign_in.presentation.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_myTestsFragment"
+            app:destination="@id/myTestsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.ruvik.sign_up.presentation.SignUpFragment"
+        android:label="SignUp"
+        tools:layout="@layout/fragment_sign_up"/>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.ruvik.forgot_password.presentation.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password"/>
+    <fragment
+        android:id="@+id/myTestsFragment"
+        android:name="com.ruvik.my_tests.presentation.MyTestsFragment"
+        android:label="MyTestsFragment"
+        tools:layout="@layout/fragment_my_tests">
+        <action
+            android:id="@+id/action_myTestsFragment_to_createTestFragment"
+            app:destination="@id/createTestFragment" />
+        <action
+            android:id="@+id/action_myTestsFragment_to_findTestFragment"
+            app:destination="@id/findTestFragment" />
+        <action
+            android:id="@+id/action_myTestsFragment_to_seeResultsFragment"
+            app:destination="@id/seeResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTestFragment"
+        android:name="com.ruvik.create_test.presentation.CreateTestFragment"
+        android:label="CreateTestFragment"
+        tools:layout="@layout/fragment_create_test">
+        <action
+            android:id="@+id/action_createTestFragment_to_myTestsFragment"
+            app:destination="@id/myTestsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findTestFragment"
+        android:name="com.ruvik.find_test.presentation.FindTestFragment"
+        android:label="FindTestFragment"
+        tools:layout="@layout/fragment_find_test">
+        <action
+            android:id="@+id/action_findTestFragment_to_myTestsFragment"
+            app:destination="@id/myTestsFragment" />
+        <action
+            android:id="@+id/action_findTestFragment_to_runTestFragment"
+            app:destination="@id/runTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/runTestFragment"
+        android:name="com.ruvik.run_test.presentation.RunTestFragment"
+        android:label="RunTestFragment"
+        tools:layout="@layout/fragment_run_test"/>
+    <fragment
+        android:id="@+id/seeResultsFragment"
+        android:name="com.ruvik.see_results.presentation.SeeResultsFragment"
+        android:label="SeeResultsFragment"
+        tools:layout="@layout/fragment_see_result"/>
+
+</navigation>

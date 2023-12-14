@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_my_tests">Мои тесты</string>
+    <string name="no_tests">Тестов пока нет. Создайте свой тест уже сейчас!</string>
+    <string name="data_copy_successful">Данные успешно скопированны!</string>
+</resources>

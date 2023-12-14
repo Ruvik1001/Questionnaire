@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_about_test_title">Information about the test</string>
+    <string name="alert_about_test_body">The name of the test: %1$s\n\How to pass: answer all the questions of the test, after which you will be able to send your answers.Note: When exiting testing, all answers will be reset, and the result will not be saved!</string>
+    <string name="button_send_text">Send</string>
+    <string name="test_send_alert_title">Sending the test</string>
+    <string name="test_send_alert_text_successful">The test was sent successfully!\after clicking on the button, you will be redirected back to the test search.</string>
+    <string name="finish_text">Finish the test review</string>
+    <string name="test_send_alert_text_failure">The test was not sent!\Please try again.</string>
+    <string name="repeat_text">Resending the form</string>
+</resources>

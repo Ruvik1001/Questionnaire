@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_question">Add a question</string>
+    <string name="confirm">Confirm</string>
+    <string name="test_name_hint">The name of the test</string>
+    <string name="insert_name">Enter a name</string>
+    <string name="enter_option">Enter an option</string>
+    <string name="add_option">Add a field</string>
+    <string name="can_not_save">I can\'t save the test. Try again</string>
+</resources>

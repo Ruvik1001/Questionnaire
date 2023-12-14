@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_pattern">[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]{2,}</string>
+    <string name="title_reset_password">Password reset</string>
+    <string name="reset_email_hint">Mail</string>
+    <string name="reset_password_info">Attention! After clicking on the button, a link will be sent to the specified email address to change the user\'s password.</string>
+    <string name="reset_password_btn_text">Throw off</string>
+    <string name="succesful_reset_password">The password has been successfully reset!</string>
+    <string name="failure_reset_password">The password could not be reset. Please check the correctness of the specified email or go to the \"Register\" tab to create a new account.</string>
+</resources>

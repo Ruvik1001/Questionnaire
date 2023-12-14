@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".presentation.SignInFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/core_standard_padding">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_180"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MiddleTextBlack"
+                android:textSize="@dimen/core_very_big_text"
+                android:layout_below="@id/icon"
+                android:text="@string/title_hello"/>
+
+            <EditText
+                android:id="@+id/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="@dimen/core_standard_margin"
+                android:hint="@string/login_editable_hint"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextLogin"
+                android:layout_marginTop="@dimen/core_standard_margin"
+                android:hint="@string/password_editable_hint"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginTop="@dimen/core_standard_margin"
+                android:text="@string/btn_sign_in_text"/>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSignIn"
+                android:layout_marginTop="@dimen/core_standard_margin"
+                android:text="@string/btn_sign_up_text"/>
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSignUp"
+                android:layout_marginTop="@dimen/core_standard_margin"
+                style="@style/MiddleTextBlack"
+                android:clickable="true"
+                android:inputType="textUri"
+                android:text="@string/forgot_password_text"
+                android:textColor="@color/black"
+                tools:ignore="TextViewEdits"
+                android:focusable="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvForgotPassword"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/locale_ico"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/locale_flag"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:id="@+id/locale_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/MiddleTextBlack"
+                    android:text="@string/lenguage_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+</FrameLayout>

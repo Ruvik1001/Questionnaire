@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_test_body_translation_by_bundle">key_test_body_translation_by_bundle</string>
+    <string name="key_test_hash_translation_by_bundle">key_test_hash_translation_by_bundle</string>
+</resources>

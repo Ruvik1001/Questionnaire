@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_sign_up">Let\'s register a new account!</string>
+    <string name="email_hint">Mail</string>
+    <string name="password_hint">Password</string>
+    <string name="password_confirm_hint">Confirm password</string>
+    <string name="sign_up_btn_text">Sign up</string>
+    <string name="email_pattern">[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]{2,}</string>
+    <string name="alert_sign_up_title">Registration</string>
+    <string name="successful_sign_up">Account registration was successful!</string>
+    <string name="failure_sigen_up">This account has already been registered. Please try another email or click \"Forgot password\" on the main page.</string>
+</resources>
