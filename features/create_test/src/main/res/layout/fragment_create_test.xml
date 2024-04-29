@@ -15,12 +15,12 @@
             android:id="@+id/testName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:layout_above="@id/btnSetTestName"
+            android:layout_centerInParent="true"
             android:layout_margin="16dp"
             android:hint="@string/test_name_hint"
-            android:layout_centerInParent="true"
-            android:layout_above="@id/btnSetTestName"/>
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnSetTestName"

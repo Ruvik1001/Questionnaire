@@ -21,29 +21,48 @@
             style="@style/MiddleTextBlack"
             android:gravity="center"
             android:textColor="@color/white"
-            android:padding="16dp"
+            android:padding="@dimen/core_standard_padding"
             android:background="@color/blue"/>
 
-
-        <EditText
-            android:id="@+id/editTextTestCode"
+        <LinearLayout
+            android:id="@+id/code_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_centerInParent="true"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/core_standard_padding"
             android:layout_above="@id/buttonFindTest"
-            android:layout_margin="@dimen/core_standard_margin"
-            android:hint="@string/test_code_hint"
-            android:inputType="textEmailAddress" />
+            android:layout_margin="@dimen/core_standard_margin">
 
+            <EditText
+                android:id="@+id/editTextTestCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/core_standard_margin"
+                android:layout_marginTop="@dimen/core_standard_padding"
+                android:layout_weight="80"
+                android:hint="@string/test_code_hint"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/imageViewClearText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/clear"
+                android:visibility="gone"
+                android:layout_weight="20"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonFindTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginTop="16dp"
             android:layout_margin="@dimen/core_standard_margin"
+            android:layout_marginTop="@dimen/core_standard_padding"
+            android:fontFamily="@font/picasso"
             android:text="@string/find_test_btn_text" />
 
         <ProgressBar
@@ -68,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/note_white"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/core_standard_padding"
                 android:clickable="true"
                 android:focusable="true" />
 
@@ -77,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/search_white"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/core_standard_padding"
                 android:clickable="true"
                 android:focusable="true" />
 

@@ -104,6 +104,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:src="@drawable/add_ico"
+            style="@style/ClickableIcon"
             android:background="@drawable/round_bg"
             android:layout_marginBottom="48dp"
             android:layout_marginEnd="16dp"

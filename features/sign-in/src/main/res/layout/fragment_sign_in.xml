@@ -30,6 +30,7 @@
                 style="@style/MiddleTextBlack"
                 android:textSize="@dimen/core_very_big_text"
                 android:layout_below="@id/icon"
+                android:layout_marginTop="@dimen/core_standard_margin"
                 android:text="@string/title_hello"/>
 
             <EditText
@@ -47,7 +48,7 @@
                 android:layout_below="@id/editTextLogin"
                 android:layout_marginTop="@dimen/core_standard_margin"
                 android:hint="@string/password_editable_hint"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/btnSignIn"
@@ -73,7 +74,6 @@
                 android:layout_marginTop="@dimen/core_standard_margin"
                 style="@style/MiddleTextBlack"
                 android:clickable="true"
-                android:inputType="textUri"
                 android:text="@string/forgot_password_text"
                 android:textColor="@color/black"
                 tools:ignore="TextViewEdits"
@@ -85,6 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvForgotPassword"
                 android:orientation="horizontal"
+                android:layout_marginTop="@dimen/core_standard_margin"
                 android:gravity="center">
 
                 <ImageView
@@ -112,6 +113,6 @@
         android:id="@+id/progress_circular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:layout_gravity="center"/>
 </FrameLayout>

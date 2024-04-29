@@ -5,6 +5,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="teal_900">#006161</color>
     <color name="hint">#FF797979</color>
     <color name="frame_stroke">#9e9e9e</color>
     <color name="background">#eeeeee</color>
@@ -17,5 +18,6 @@
     <color name="gray">#AAAAAA</color>
     <color name="blue">#0031E1</color>
     <color name="dark_blue">#032DC6</color>
+    <color name="dark_blue2">#0227AC</color>
     <color name="light_red">#FF7575</color>
 </resources>

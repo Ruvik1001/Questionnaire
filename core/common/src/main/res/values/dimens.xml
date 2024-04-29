@@ -5,6 +5,7 @@
     <dimen name="core_theme_medium_space">12dp</dimen>
     <dimen name="core_theme_large_space">30dp</dimen>
     <dimen name="core_standard_padding">16dp</dimen>
+    <dimen name="core_small_padding">8dp</dimen>
     <dimen name="core_sub_text">14sp</dimen>
     <dimen name="core_standard_text">16sp</dimen>
     <dimen name="core_big_text">18sp</dimen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:font="@font/american"
+        android:fontStyle="normal"
+        android:fontWeight="100"
+        tools:targetApi="o" />
+    <font
+        android:font="@font/picasso"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        tools:targetApi="o" />
+    <font
+        android:font="@font/stanberry"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        tools:targetApi="o" />
+    <font
+        android:font="@font/transport"
+        android:fontStyle="normal"
+        android:fontWeight="200"
+        tools:targetApi="o" />
+</font-family>

@@ -7,4 +7,5 @@
     <string name="brake_test">Отмена</string>
     <string name="test_find_failure">Тест не найден или временно недоступен. Проверьте код теста и попытайтесь снова.</string>
     <string name="confirm_ok">Ок</string>
+    <string name="try_again">Попробовать снова</string>
 </resources>
