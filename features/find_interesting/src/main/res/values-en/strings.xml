@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_find_interesting">Поиск интересных фактов</string>
-    <string name="fact_hint">Введите искомое содержимое</string>
-    <string name="find_fact_btn_text">Найти статистический факт</string>
-    <string name="nothing_finded">Нет совпадений</string>
-    <string name="confirm_ok">Ок</string>
-    <string name="try_again">Попробовать снова</string>
-    <string name="server_error">Сервер временно недоступен. Попробуйте позднее.</string>
-    <string name="title_find_error">Ошибка загрузки</string>
-    <string name="connection_error">Проблемы подулючения к сети. Проверьте подключение и попытайтесь снова.</string>
+    <string name="title_find_interesting">Search for interesting facts</string>
+    <string name="fact_hint">Enter the content you are looking for</string>
+    <string name="find_fact_btn_text">Find a statistical fact</string>
+    <string name="nothing_finded">There are no matches</string>
+    <string name="confirm_ok">OK</string>
+    <string name="try_again">Try again</string>
+    <string name="server_error">The server is temporarily unavailable. Try again later.</string>
+    <string name="title_find_error">Download error</string>
+    <string name="connection_error">Network connection problems. Check the connection and try again.</string>
 </resources>

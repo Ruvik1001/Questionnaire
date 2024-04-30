@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatDelegate
 import com.ruvik.common.LongToast
 import com.ruvik.sign_in.R
 import kotlinx.coroutines.CoroutineScope
@@ -42,9 +43,14 @@ class SignInFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         view = inflater.inflate(R.layout.fragment_sign_in, container, false)
+        initTheme()
 
         view.findViewById<ImageView>(R.id.locale_ico).setOnClickListener {
             switchLanguage()
+        }
+
+        view.findViewById<ImageView>(R.id.switchTheme).setOnClickListener {
+            switchTheme()
         }
 
         etLogin = view.findViewById(R.id.editTextLogin)
@@ -123,4 +129,36 @@ class SignInFragment : Fragment() {
         "en" -> "ru"
         else -> "ru"
     }
+
+    private fun initTheme() {
+        AppCompatDelegate.setDefaultNightMode(getThemeState())
+    }
+
+    private fun switchTheme() {
+        val nightModeFlags = requireContext().resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
+        val isNightMode = nightModeFlags == Configuration.UI_MODE_NIGHT_YES
+
+        val newNightMode = if (isNightMode) AppCompatDelegate.MODE_NIGHT_NO else AppCompatDelegate.MODE_NIGHT_YES
+        AppCompatDelegate.setDefaultNightMode(newNightMode)
+        saveThemeState(newNightMode)
+    }
+
+    private fun saveThemeState(themeMode: Int) {
+        val sharedPreferences = requireActivity().getSharedPreferences(THEME_PREF, Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt(THEME_MODE_KEY, themeMode)
+        editor.apply()
+    }
+
+    private fun getThemeState(): Int {
+        val sharedPreferences = requireActivity().getSharedPreferences(THEME_PREF, Context.MODE_PRIVATE)
+        return sharedPreferences.getInt(THEME_MODE_KEY, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+    }
+
+
+    companion object {
+        private const val THEME_PREF = "THEME_PREF"
+        private const val THEME_MODE_KEY = "THEME_MODE_KEY"
+    }
+
 }

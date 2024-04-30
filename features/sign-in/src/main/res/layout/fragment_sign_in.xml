@@ -86,7 +86,8 @@
                 android:layout_below="@id/tvForgotPassword"
                 android:orientation="horizontal"
                 android:layout_marginTop="@dimen/core_standard_margin"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/locale_container">
 
                 <ImageView
                     android:id="@+id/locale_ico"
@@ -104,6 +105,15 @@
                     android:textColor="@color/black"/>
 
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/switchTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/theme_ico"
+                android:layout_below="@id/locale_container"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/core_standard_margin"/>
 
         </RelativeLayout>
 
