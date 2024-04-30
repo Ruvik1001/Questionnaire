@@ -11,18 +11,37 @@
         android:background="@color/background">
 
 
-
-        <TextView
-            android:id="@+id/textViewFindTestTitle"
+        <LinearLayout
+            android:id="@+id/titleContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title_find_test"
-            android:textSize="@dimen/core_very_big_text"
-            style="@style/MiddleTextBlack"
-            android:gravity="center"
-            android:textColor="@color/white"
+            android:orientation="horizontal"
             android:padding="@dimen/core_standard_padding"
-            android:background="@color/blue"/>
+            android:background="@color/blue">
+
+
+
+            <TextView
+                android:id="@+id/textViewFindTestTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_find_test"
+                android:textSize="@dimen/core_very_big_text"
+                style="@style/MiddleTextBlack"
+                android:gravity="center"
+                android:layout_weight="90"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/imageButtonFacts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facts"
+                android:layout_weight="10"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/code_container"

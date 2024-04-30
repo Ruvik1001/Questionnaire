@@ -33,6 +33,7 @@ class FindTestFragment : Fragment() {
     private lateinit var progressBar: ProgressBar
     private lateinit var imageViewNotebook: ImageView
     private lateinit var imageViewClearText: ImageView
+    private lateinit var imageViewFacts: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,6 +46,9 @@ class FindTestFragment : Fragment() {
         progressBar = view.findViewById(R.id.progressBar)
         imageViewNotebook = view.findViewById(R.id.imageViewNotebook)
         imageViewClearText = view.findViewById(R.id.imageViewClearText)
+        imageViewFacts = view.findViewById(R.id.imageButtonFacts)
+
+        imageViewFacts.setOnClickListener { viewModel.gotToFacts() }
 
 
         editTextTestCode.addTextChangedListener(object : TextWatcher {

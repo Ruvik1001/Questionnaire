@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/create_test" />
+            <option value="$PROJECT_DIR$/features/find_interesting" />
             <option value="$PROJECT_DIR$/features/find_test" />
             <option value="$PROJECT_DIR$/features/forgot_password" />
             <option value="$PROJECT_DIR$/features/my_tests" />

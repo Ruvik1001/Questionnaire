@@ -17,4 +17,9 @@ interface FindTestRouter {
      * @param testBody The test body for the selected test.
      */
     fun goToRunTest(testBody: TestBody)
+
+    /**
+     * Navigates to the Facts screen.
+     */
+    fun goToFacts()
 }

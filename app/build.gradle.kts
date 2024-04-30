@@ -53,6 +53,7 @@ dependencies {
     implementation(project(path = ":features:find_test"))
     implementation(project(path = ":features:run_test"))
     implementation(project(path = ":features:see_results"))
+    implementation(project(path = ":features:find_interesting"))
 
     implementation(libs.navigation.fragment.ktx)
     implementation(libs.navigation.ui.ktx)

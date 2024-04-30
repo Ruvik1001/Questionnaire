@@ -11,4 +11,5 @@
     <dimen name="core_big_text">18sp</dimen>
     <dimen name="core_very_big_text">24sp</dimen>
     <dimen name="core_standard_margin">16dp</dimen>
+    <dimen name="core_standard_margin_24">24dp</dimen>
 </resources>

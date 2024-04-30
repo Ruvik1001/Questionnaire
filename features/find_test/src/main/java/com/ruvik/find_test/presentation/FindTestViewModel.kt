@@ -51,4 +51,8 @@ class FindTestViewModel(
     fun goToMyTests() {
         findTestRouter.goToMyTests()
     }
+
+    fun gotToFacts() {
+        findTestRouter.goToFacts()
+    }
 }

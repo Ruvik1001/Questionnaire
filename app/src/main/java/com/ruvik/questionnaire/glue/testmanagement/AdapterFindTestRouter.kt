@@ -32,6 +32,10 @@ class AdapterFindTestRouter(
         navController?.navigate(R.id.action_findTestFragment_to_myTestsFragment, null, navOptions)
     }
 
+    override fun goToFacts() {
+        navController?.navigate(R.id.action_findTestFragment_to_findInterestingFragment)
+    }
+
     /**
      * Navigate to the RunTestFragment with the provided [TestBody].
      *
@@ -55,4 +59,5 @@ class AdapterFindTestRouter(
     fun switchNavController(navControllerNew: NavController) {
         navController = navControllerNew
     }
+
 }

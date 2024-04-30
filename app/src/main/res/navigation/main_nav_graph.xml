@@ -66,6 +66,9 @@
         <action
             android:id="@+id/action_findTestFragment_to_runTestFragment"
             app:destination="@id/runTestFragment" />
+        <action
+            android:id="@+id/action_findTestFragment_to_findInterestingFragment"
+            app:destination="@id/findInterestingFragment" />
     </fragment>
     <fragment
         android:id="@+id/runTestFragment"
@@ -77,5 +80,10 @@
         android:name="com.ruvik.see_results.presentation.SeeResultsFragment"
         android:label="SeeResultsFragment"
         tools:layout="@layout/fragment_see_result"/>
+    <fragment
+        android:id="@+id/findInterestingFragment"
+        android:name="com.ruvik.find_interesting.presentation.FindInterestingFragment"
+        android:label="FindInterestingFragment"
+        tools:layout="@layout/fragment_find_interesting"/>
 
 </navigation>

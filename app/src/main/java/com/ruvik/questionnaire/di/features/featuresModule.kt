@@ -1,6 +1,7 @@
 package com.ruvik.questionnaire.di.features
 
 import com.ruvik.create_test.presentation.CreateTestViewModel
+import com.ruvik.find_interesting.presentation.FindInterestingViewModel
 import com.ruvik.find_test.presentation.FindTestViewModel
 import com.ruvik.forgot_password.presentation.ForgotPasswordViewModel
 import com.ruvik.my_tests.presentation.MyTestsViewModel
@@ -109,5 +110,9 @@ val featuresModule = module {
         SeeResultsViewModel(
             loadTestResultsUseCase = get()
         )
+    }
+
+    viewModel<FindInterestingViewModel> {
+        FindInterestingViewModel()
     }
 }
